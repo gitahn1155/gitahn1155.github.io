@@ -1,92 +1,132 @@
-@charset "utf-8";
-@font-face {
-    font-family: 'RobotoT';
-    font-style: normal;
-    src: url(font/Roboto-Thin.woff) format('woff');
-    src: url(font/Roboto-Thin.eot?#iefix) format('embedded-opentype'),
-    url(font/Roboto-Thin.woff) format('woff');
-}
-@font-face {
-    font-family: 'RobotoL';
-    font-style: normal;
-    src: url(font/Roboto-Light.woff) format('woff');
-    src: url(font/Roboto-Light.eot?#iefix) format('embedded-opentype'),
-    url(font/Roboto-Light.woff) format('woff');
-}
-@font-face {
-    font-family: 'RobotoR';
-    font-style: normal;
-    src: url(font/Roboto-Regular.woff) format('woff');
-    src: url(font/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
-    url(font/Roboto-Regular.woff) format('woff');
-}
-@font-face {
-    font-family: 'RobotoM';
-    font-style: normal;
-    src: url(font/Roboto-Medium.woff) format('woff');
-    src: url(font/Roboto-Medium.eot?#iefix) format('embedded-opentype'),
-    url(font/Roboto-Medium.woff) format('woff');
-}
-@font-face {
-    font-family: 'RobotoB';
-    font-style: normal;
-    src: url(font/Roboto-Bold-webfont.woff) format('woff');
-    src: url(font/Roboto-Bold-webfont.eot?#iefix) format('embedded-opentype'),
-    url(font/Roboto-Bold-webfont.woff) format('woff');
-}
-@font-face {
-    font-family: 'NotoSansT';
-    font-style: normal;
-	src: url(font/NotoSansKR-Thin-Hestia.eot);
-    src: url(font/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(font/NotoSansKR-Thin-Hestia.woff) format('woff'),
-    url(font/NotoSansKR-Thin-Hestia.otf) format('opentype');
-}
-@font-face {
-    font-family: 'NotoSansL';
-    font-style: normal;
-    src: url(font/NotoSansKR-Light-Hestia.eot);
-    src: url(font/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(font/NotoSansKR-Light-Hestia.woff) format('woff'),
-    url(font/NotoSansKR-Light-Hestia.otf) format('opentype');
-}
-@font-face {
-    font-family: 'NotoSansR';
-    font-style: normal;
-    src: url(font/NotoSansKR-Regular-Hestia.eot);
-    src: url(font/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(font/NotoSansKR-Regular-Hestia.woff) format('woff'),
-    url(font/NotoSansKR-Regular-Hestia.otf) format('opentype');
-}
-@font-face {
-    font-family: 'NotoSansM';
-    font-style: normal;
-    src: url(font/NotoSansKR-Medium-Hestia.eot);
-    src: url(font/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(font/NotoSansKR-Medium-Hestia.woff) format('woff'),
-    url(font/NotoSansKR-Medium-Hestia.otf) format('opentype');
-}
+/*
+    1. Basic Style - Line 14     
+    2. Slider Style
+    3. Common?
+    4. PC Style
+    5. Tablet Style
+    6. Mobile Style
 
-body {width:100%; margin:0; font-family:'RobotoL', 'NotoSansL', 'SimHei', sans-serif;color:#999;line-height:1; word-wrap:break-word;word-break: break-all;}
-a {text-decoration:none;}
-a:link, a:visited, a:hover, a:active, a:focus {text-decoration:none;}
-img {border:0;vertical-align:top}
-ul, ol, li {list-style:none; padding:0; margin:0;}
-fieldset {border:0; padding:0; margin: 0;}
-h1, h2, h3, h4, h5, h6, p{margin: 0; font-weight: normal;}
-table {border-collapse:collapse;border-spacing:0;}
-input, textarea, button, select, option, {font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;line-height:1;}
-strong{font-weight:normal;}
-figure {margin:0;}
-.wrapper {position:relative; padding-top:70px;}
-.wrap {max-width:1154px;margin:0 auto;padding:0 16px;}
+
+
+*/
+
+/* Basic Style */
+body {
+    margin:0; 
+    padding: 0; 
+    font-family:'RobotoL', 'NotoSansL', 'SimHei', sans-serif;
+    color:#999;
+    word-wrap:break-word;
+    word-break: break-all;
+    }
+
+a, a:link, a:visited, a:hover, a:active, a:focus  {
+    text-decoration:none;
+    }
+
+img {
+    border:0;
+    vertical-align: text-top;
+    }
+
+ul, ol, li {
+    list-style:none; 
+    padding:0; 
+    margin:0;
+    }
+
+
+fieldset {
+    border:0; 
+    padding:0; 
+    margin: 0;
+    }
+
+h1, h2, h3, h4, h5, h6, p, input, textarea, button, select, option {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    }
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+
+.wrapper {
+    position: relative; 
+    margin: 0; 
+    padding: 0;
+    top: 70px;
+    }
+
+.wrap {
+    max-width:1154px;
+    margin:0 auto;
+    padding:0 16px;
+    }
+/* End basic style */
 
 /* slider */
-.slider { position: relative; max-width: 1500px; margin: auto; text-align: center}
-.slider .item { height: 100%; background-color:blue; width: 100%; text-align: center; color: #fff; line-height: 250px; font-size: 80px; font-weight: bold;}
-.slider .btn {}
-.slider .btn .prev { z-index: 100; position: absolute; top: 45%; left: 30px; }
-.slider .btn .next { z-index: 100; position: absolute; top: 45%; right: 30px; }
+.slider { 
+    position: relative; 
+    max-width: 1500px; 
+    margin: auto; 
+    text-align: center;
+    }
+
+.slider .item { 
+    height: 100%; 
+    width: 100%; 
+    background-color: none; 
+    color: #fff;
+    }
+
+i {
+    padding: 0;
+    margin: 0;
+    border: solid #fff;
+    width: 60px;
+    height: 60px;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.rightArrow {
+       transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.leftArrow {
+  transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.slider .btn .prev { 
+    z-index: 100; 
+    position: absolute; 
+    top: 37%; 
+    left: 50px; 
+    border: 2p solid #fff; 
+    cursor: pointer;
+}
+
+.slider .btn .next { 
+    z-index: 100; 
+    position: absolute; 
+    top: 37%; 
+    right: 50px;
+    cursor: pointer;
+    }
+
+.owl-dots {
+    margin-top: -50px;
+    z-index: 100;
+}
+/* End slider */
 
 /* common */
 .clearBox {content:'';clear:both;display:block;overflow:hidden;}
@@ -149,27 +189,25 @@ span.outer{display:inline-block;}
 .topicList li .snsBox a img{width:100%;}
 
 /* issueBox */
-.issueBox .wrap{max-width:1440px;}
+.tab .wrap{max-width:1440px;}
 .issueBox h2{margin-bottom:40px;text-align:center;color:#000;font-size:34px;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif;}
-.issueBox {background:#fff;padding: 20px 0 0}
-.issueBox .issuTypeBox {text-align:center;width:100%;overflow:hidden;border-bottom:1px solid #cecece;height:52px;}
-.issueBox .issuType {max-width:480px; margin:0 auto;}
-.issueBox .issuType li {float:left;width:120px;}
-.issueBox .issuType li a {display:inline-block;width:100%;padding:17px 0;color:#bbb7b4;font-size:16px;font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif; cursor:pointer;}
+.tab {background:#fff;padding: 20px 0 0}
+.tab .issuTypeBox {text-align:center;width:100%;overflow:hidden;border-bottom:1px solid #cecece;height:52px;}
+.tab .issuType {max-width:480px; margin:0 auto;}
+.tab .issuType li {float:left;width:120px;}
+.tab .issuType li a {display:inline-block;width:100%;padding:17px 0;color:#bbb7b4;font-size:16px;font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif; cursor:pointer;}
 .issueBox .issuType li a.on {color:#2b2b2b;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif;border-bottom:2px solid #2b2b2b;}
 
-.issueListBox {overflow:hidden;padding:40px 0;}
-.issueListBox .issueList li {overflow:hidden;float:left;width:33.33%;position:relative;background:#000;}
-.issueListBox .issueList li a {display:block; }
-.issueListBox .issueList li a img{width:100%; height:auto;}
-.issueListBox .issueList li .postBox {display:none;position:absolute;top:31%;right:8%;left:8%;text-align:center;}
-.issueListBox .issueList li .postBox .snsBox02 {display:inline-block;margin-top:35px;}
-.issueListBox .issueList li .postBox .snsBox02 a {display:inline-block;border:none;float:left;width:30px;margin-left:8px;}
-.issueListBox .issueList li .postBox .snsBox02 a:first-child {margin-left:0px;}
-.postBox .themeType {font-size:20px;}
-.postBox h3 {height: 2.4em;font-size:28px;color:#fff;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif;margin-top:10px;line-height:34px;}
-.issueListBox .issueList li.focus .issueListImg{opacity:0.3;filter: alpha(opacity=30);}
-.issueListBox .issueList li.focus .postBox{display:block;}
+.tabList {overflow:hidden;padding:40px 0;}
+.tabList .issueList li {overflow:hidden;float:left;width:33.33%;position:relative;background:#000;}
+.tabList .issueList li a {display:block; }
+.tabList .issueList li a img{width:100%; height:auto;}
+.tabList .issueList li .postBox {display:none;position:absolute;top:31%;right:8%;left:8%;text-align:center;}
+.tabList .issueList li .postBox .snsBox02 {display:inline-block;margin-top:35px;}
+.tabList .issueList li .postBox .snsBox02 a {display:inline-block;border:none;float:left;width:30px;margin-left:8px;}
+.tabList .issueList li .postBox .snsBox02 a:first-child {margin-left:0px;}
+.tabList .issueList li.focus .issueListImg{opacity:0.3;filter: alpha(opacity=30);}
+.tabList .issueList li.focus .postBox{display:block;}
 
 
 

@@ -10,17 +10,31 @@ $(document).ready(function(){
     nav: false,
     dots: true, // circle to line
         
+        
     //이벤트
         
         
     //함수
-    
         
     });
     
     
+    //콜백
+    var slider = $('.owl-carousel');
+	$('.next').on('click', function() {
+		slider.trigger('next.owl.carousel', [1000]);
+	})
+	
+	$('.prev').on('click', function() {
+		slider.trigger('prev.owl.carousel', [1000]); 
+	});
+	
     
 });
+
+//버튼
+
+
 
 /**
 
