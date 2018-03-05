@@ -1,53 +1,396 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="generator" content="제작툴"/>
-        <meta name="author" content="제작자" />
-        <meta name="keywords" content="사이트 키워드" />
-        <meta name="description" content="사이트 설명" />
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>캠코 웹진</title>
-        <link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="plugin/owl.carousel.min.css">
-		<link rel="stylesheet" href="plugin/owl.theme.default.min.css">
-    </head>
-<body>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<title>Kamco</title>
 
-<header>
-    <div class="menu"></div>
-</header>
-
-<div class="slider" style="display: none;"> 	
-    <div class="owl-carousel owl-theme">
-        <div class="item item1"> 1</div>
-        <div class="item item2"> 2</div>
-        <div class="item item3"> 3</div>
-    </div>
-</div>
-        
-<div class="slider"> 	
-<div class="owl-carousel owl-theme">
-  <div class="item item1"><img src="images/1612021102063940.jpg"></div>
-  <div class="item item2"><img src="images/sub0102_img01.jpg"></div>
-  <div class="item item3"><img src="images/sub0104_img01.jpg"></div>
-</div>
-</div>
-		
-		<div class="btn">
-			<button id="prev">이전</button>
-			<button id="next">다음</button>
-			<div class="nav">
-			<button id="num1">1</button>
-			<button id="num1">2</button>
-			<button id="num1">3</button>
-			</div>
-		</div>
-		
-		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="plugin/owl.carousel.min.js"></script>
+        <!-- kamco js -->    
+        <script type='text/javascript' src="js/jquery-3.3.1.min.js"></script>
+        <script type='text/javascript' src="js/jquery-migrate-1.4.1.min.js"></script>
+        <script type='text/javascript' src="plugin/owl.carousel.min.js"></script>
+    
+        <!-- content up js -->
+        <script type="text/javascript" src="js/jquery.corner.js"></script>
+        <script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+        <script src="js/common.js"></script>
         <script src="js/script.js"></script>
-        
 
-    </body>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- kamco style -->
+        <link rel='stylesheet' type='text/css' href='css/style.css' />
+        <link rel='stylesheet' type='text/css' href='css/post.css' />
+        <link rel='stylesheet' type='text/css' href='plugin/owl.carousel.min.css' />
+        <link rel='stylesheet' type='text/css' href='plugin/owl.theme.default.min.css' />
+    </head>
+	<body>
+		<!-- wrapper -->
+		<div class="wrapper" id="top">
+            
+        <!-- header -->
+			<header class="top">
+				<div class="topBox">
+					<a href="" class="headerMenu"><span class="btnW">기사 목록 보기</span></a>
+					<a href="" class="MopenSearch"></a>
+                    <!-- kamco logo -->
+					<h1><a href="http://127.0.0.1:62061/index.html/" class="headerLogo"><img src="" alt="kamcologo" /></a></h1>         
+				</div>				
+            </header>
+		<!-- header End -->
+        
+        <!-- section slider -->    
+        <div class="slider"> 	
+            <div class="owl-carousel owl-theme">
+                <div class="item item1"><img src="img/1_1.jpg"></div>
+                <div class="item item2"><img src="img/1_2.jpg"></div>    
+                <div class="item item3"><img src="img/1_3.jpg"></div>
+            </div>     		
+            <div class="btn">
+                <button class="prev">이전</button>
+                <button class="next">다음</button>
+            </div>
+        </div>
+        <!-- End slider -->
+            
+        <!-- section tab -->
+        <section class="issueBox">
+		<div class="wrap">
+			
+			<div class="issuTypeBox">
+				<ul class="issuType">
+					<li><a class="on">ALL</a></li>
+					<li><a class="">캠코 알리미</a></li>
+					<li><a class="">캠코 돋보기</a></li>
+					<li><a class="">캠코 문화원정대</a></li>
+				</ul>
+			</div>     
+		</div>
+	   </section> 
+        <!-- End section tab -->    
+		<!-- section content -->
+	   
+        <section class="topicBox">
+		<div class="wrap">
+			<ul class="topicList">
+            
+            <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0101_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >캠코 이슈</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>‘내일’을 준비하는‘내 일자리’만들기</h3>
+							<p class="topicTextInfo preview">지하철 역사를 나오면 가끔 우리의 눈길을 끄는 한 사람이 있습니다. 빨간 조끼를 입은 이 중년의 사나이는 적십자도, 구세군도 아닙니다.&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+                                
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+                 <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0102_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >희망 리플레이</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>“펜은 총보다 강하다. 그러나 예술은 펜보다 더 강하다”</h3>
+							<p class="topicTextInfo preview">국립 청년 및 유소년 오케스트라 시스템 육성재단 ‘엘 시스테마(El Sistemar)’는 1975년 그 탄생 이후 전 세계적으로 가장 창의적이고 성공적인 복지정책으로 칭송받고 있습니다.&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+                 <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0103_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >언론에 비친 캠코</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>새 정부의 新기업구조조정 정책</h3>
+							<p class="topicTextInfo preview">우리나라는 과거 두 차례 글로벌 경제위기를 극복하는 과정에서 정책금융기관 주도의 구조조정 방식으로 도입했고 이는 사상 초유의 외환위기 사태를 조기에 수습하는 데 상당한 기여를 했습니다. &hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+              <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0104_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >캠코의 공모전</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>2017 캠코 콘텐츠 공모전 시상식</h3>
+							<p class="topicTextInfo preview">믿음과 자신감이 있으면 젊은 것이고, 의심하고 두려워하면 늙은 것입니다. 희망이 있다면 젊은 것이고, 절망한다면 늙은 것입니다. 세월은 피부에 주름을 만들지만, 사라진 열정은 영혼에 주름을 만듭니다.&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>   
+            <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0201_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >캠코 구석구석</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>캠코의 우수성을 세계에 알린다!</h3>
+							<p class="topicTextInfo preview">음과 패기, 열정과 도전정신으로 똘똘 뭉친 팀이 있다.바로 전 세계 방방곡곡에 캠코의 위상을 드높이고 있는 금융투자관리부 해외사업팀! 캠코의 소중한 자산관리 전문성을 해외에 전수하는 해외사업팀의 이야기를 공개합니다!&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>   
+                  <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0202_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >캠코 탐구생활</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>끈끈한 정과 의리로 지역 상생에 앞장선다!</h3>
+							<p class="topicTextInfo preview">‘아따, 정 하면 우리 광주가 최고지라~’ 넘치는 정과 후한 인심으로 40년째 빛고을 광주의 자산지킴이가 되는 있는 이들이 있습니다.&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>   
+                  <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0203_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >캠코 소통노트</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>캠코의 우수성을 세계에 알린다!</h3>
+							<p class="topicTextInfo preview">음과 패기, 열정과 도전정신으로 똘똘 뭉친 팀이 있다.바로 전 세계 방방곡곡에 캠코의 위상을 드높이고 있는 금융투자관리부 해외사업팀! 캠코의 소중한 자산관리 전문성을 해외에 전수하는 해외사업팀의 이야기를 공개합니다!&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>   
+                  <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0204_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >Clean 캠코</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>온(溫)·애(愛)·어(語)</h3>
+							<p class="topicTextInfo preview">요즘 온·오프라인을 망라하고 유행처럼 번지고 있는 신인류의 언어가 있습니다. 그 정체는 바로 급식을 먹는 초·중·고 학생들이 사용하는&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+            <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0301_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >트렌드 리포트</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>WAG THE DOGS</h3>
+							<p class="topicTextInfo preview">황금 개의 해를 내다보는 2018 소비 트렌드&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+            <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0303_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >캠코 미식회</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>인생샷 건질 부산 맛집</h3>
+							<p class="topicTextInfo preview">보기 좋은 떡이 먹기도 좋다! 음식은 입으로만 먹는 것이 아닙니다. 좋은 분위기에서 예쁜 비주얼의 음식을 먹으면 그 맛이 배가 되는데요.&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+            <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0302_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >영화 속 경제학</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>타인의 아픔에 대해</h3>
+							<p class="topicTextInfo preview">아임 파인 땡큐 앤유? 우리는 지금 서로의 안부를 물어야 한다.
+                            영화 (아이 캔 스피크)에 담겨진 1코노미를 사는 지혜!&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+            <li>
+					<div>
+						<div class="corner5b">
+							<a href="http://webzine.kamco.or.kr/vol14/sub0202.asp">
+								<div class="topicListImg">
+									<img width="356" height="300" src="img/sub0204_img01.jpg" class="attachment-mainpost wp-post-image" alt="20-2-1_editor_thumb" />								</div>
+							</a>
+							<div class="topicListText">
+							<p class="themeType themetype01-editor "><a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >EVENT</a></p>
+				            <a href="http://webzine.kamco.or.kr/vol14/sub0202.asp" >
+							<h3>구독신청 이벤트</h3>
+							<p class="topicTextInfo preview">웹진 구독 신청만으로 이벤트 참여가 가능합니다.&hellip;</p>
+							</a>
+							<div class="snsBox">
+								<a href="#" class="sns03"><img src="img/btn_kao.png" alt="카카오톡"></a>
+								<a href="#" class="sns01"><img src="img/btn_fb.png" alt="페이스북"></a>
+							</div>
+				            </div>								
+							</div>
+						</div>
+            </li>
+        </ul>
+		</div>
+	</section>
+    <section class ="eventBox">
+        <p style="background-color: black; width: 100%; height: 256px;"></p>
+    </section>
+		
+<!-- tab line action -->
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".issuType li a").click(function(e){
+				e.preventDefault();
+				var ajaxUrl = "http://www.momkey.com/wp-admin/admin-ajax.php";
+				var index = $(".issuType li").index($(this).parent())+1;
+
+				$(".issuType li a.on").removeClass('on').addClass('off');
+				$(this).removeClass('off').addClass('on');
+
+				$.post(ajaxUrl, {
+					action:"issue_section_ajax",
+					index: index,
+					cat: "1920",
+					perpage: 6
+				}).success(function(posts){
+					console.log(posts);
+					$(".issueList").empty(); 
+					$(".issueList").append(posts); 
+					issuhover();
+					txtdot();
+
+				});
+			});
+			jQuery(window).load(function($) {
+				jQuery('.rsArrowIcn').wrap("<div class='arrowWrap' />");
+			});
+		});
+	</script>
+<!-- End tab line action -->
+            
+<!-- footer -->
+        <footer>
+			<div class="leftWrap">
+				<h2 class="ftLogo"><a href="http://www.ssro.com/" target="_blank"><img src="" alt="캠코 로고"></a></h2>
+                <address>
+                <br />
+                <p>Copyright 2017 ⓒ 캠코. All rights reserved.</p>
+				</address>
+			</div>
+			<div class="rightWrap">
+				<p>
+                <select>지난호 보기</select>
+				</p>
+            </div>
+        </footer>
+<!-- End footer -->
+
+</div>
+<!-- End wrapper -->
+    
+</body>
 </html>

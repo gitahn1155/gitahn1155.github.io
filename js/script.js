@@ -8,7 +8,7 @@ $(document).ready(function(){
     //옵션
     items: 1,
     nav: false,
-    dots: false, // circle to line
+    dots: true, // circle to line
         
     //이벤트
         
