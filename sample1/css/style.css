@@ -385,29 +385,20 @@ footer .relateSiteBox:after {content:'';display:block;width:18px;height:9px;back
 /* screen size 1100px */
 /* header */
 @media only screen and (max-width: 1100px) {
+    
+.top .topBox {
+    height:70px;
+    max-width: 1100px;
+    width: 100%;
+    position:fixed;
+    top: 0; 
+    left:0; 
+    right:0; 
+    z-index:9;
+    background: #fff;
+}
+
 .top .headerMenu {margin:28px 0 0 30px}
-.top .menu {
-    display:inline-block;
-    float:left;
-    font-size: 14px;
-    font-family: 'RobotoR', 'NotoSansR', 'SimHei', sans-serif;
-    color:#666565;
-}
-
-.top .menu .bars {
-    display: inline-block;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    left: 22px;
-    z-index: 600;
-
-}
-.top .menu .menuWord {
-display: none;
-}    
-    
-    
 .top .searchForm {margin:17px 30px 0 0}
 .mainVisual .conwrap {top:16%;}
 .mainVisual .conwrap h2 {font-size:55px;line-height:1.2;margin-top:20px}
@@ -451,10 +442,36 @@ footer select {
 .dim a{display:block; width:100%; height:100%; }
 
 .top{position:relative;top:0;overflow:visible;}
-.customize-support .top .topBox{top:46px;}
-.top .topBox{position:fixed;top: 0; left:0; right:0; height: 48px;overflow:visible; z-index:9;background: #fff;}
-.viewOff.top .topBox{background: rgba(255,255,255,0.92);}
+.top .topBox {
+    height:70px;
+    max-width: 768px;
+    width: 100%;
+    position:fixed;
+    top: 0; 
+    left:0; 
+    right:0; 
+    z-index:9;
+    background: #fff;
+}
 
+    .banner-container {
+        display: none;
+    }
+    
+.top h1{margin-left: -56px;}
+.top h1 a{width:112px;}
+.top h1 a img{padding-top:17px;}
+.top .headerMenu{margin:0;font-size:0;width:48px;height:48px;}
+.top .headerMenu:before{width:100%;height:100%;background: url('images/Wbtn_toggle.png') no-repeat center;}
+.top .headerMenu.on:before{background-image:url('images/Wbtn_close.png')}
+.top .MopenSearch{float: right; width:18px; height:18px; padding:15px; background: url('images/Wico_search.png') no-repeat center center;}
+.top .MopenSearch.open{background-image: url('images/Wbtn_close.png');}
+.top .searchWrap{display:none; position:absolute; top:48px; left:0; right:0; background:#f8f8f8;padding:36px 16px 20px; border-bottom:1px solid #cecece;}
+.top .searchWrap .searchForm{width:100%; margin:0; float:none;}
+.top .searchForm .searchBox{position:relative; width:auto; padding: 0 80px 0 0; height:40px;}
+.top .inputText{width:100%; height:40px; font-size:15px;color:#000;}
+.top .searchBtn{position:absolute; right:0; width:52px; background-image: url('images/Wbtn_search.jpg')}
+.top .topTag{display:block;}
 
 .topicBox{padding:50px 0 46px;}
 .topicBox h2{font-size: 17px;}
