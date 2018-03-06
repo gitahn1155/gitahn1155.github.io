@@ -230,6 +230,7 @@ i {
     position: fixed;
     top: 18px;
     left: 22px;
+    z-index: 600;
 
 }
 
@@ -237,6 +238,7 @@ i {
     position: fixed;
     top: 25px;
     left: 70px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -249,16 +251,46 @@ i {
     border-radius: 5px;
 }
 
+.top .topMenu {
+    display: none;
+    
+}
+
+.topMenu ul {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    padding: 50px;
+    padding-right: 140px;
+    padding-top: 60px;
+    z-index: 300;
+    background-color: white;
+    -webkit-box-shadow: 0 8px 15px -6px black;
+	   -moz-box-shadow: 0 8px 15px -6px black;
+	        box-shadow: 0 8px 15px -6px black;
+}
+
+.topMenu ul li {
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: #191970;
+}
+
+.topMenu .subList {
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: 150;
+    cursor: pointer;
+}
+
+.subList:hover {
+    color: #FCC927;
+}
+
 .top .menu .btnW {display:inline-block;}
 .top .menu .btnM {display:none;}
-
-
-.top .topTag{display:none;}
-.top .topTag{overflow: hidden; height: 16px; margin:20px 0;}
-.top .topTag li{display:inline-block;}
-.top .topTag li:first-child a:before{content:'';}
-.top .topTag li a:before{content:'|'; display:inline-block; margin-right:15px; }
-.top .topTag a{font-size:15px;margin-right:15px; color:#666565; }
 
 
 /* topicBox */
@@ -311,23 +343,21 @@ i {
 /* footer */
 footer{ padding: 35px 50px 25px; height:46px; background: #e8edf0;  position: relative; }
 footer .leftWrap{float: left;}
-footer .leftWrap .ftLogo{float:left; }
-footer .leftWrap address{float:left; font-size:12px; font-style: normal; color:#9b9c9e; margin-left: 20px; font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;;}
-footer .leftWrap address p{margin:5px 0 0;}
-footer .leftWrap address p span{display:inline-block;margin-right:15px;}
-footer .leftWrap address p a{color:#9b9c9e;}
-footer .leftWrap address p:first-child {margin:0;}
+footer .leftWrap .ftLogo{float:left;}
+footer .leftWrap address{float:left; font-size:12px; font-style: normal; color:#9b9c9e; margin-left: 20px; margin-top: 20px; font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;}
+footer select {
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+}
 
+.totalWrap { float: left;margin: 0; padding: 0;height: 5px; background: #a3abbb; width: 100%;}
 footer .rightWrap{float: right;}
 footer .rightWrap p{float:left;margin:3px 0 0 0;}
 footer .rightWrap p a{display:inline-block;width:32px;height:32px;}
 footer .rightWrap p a img{width:100%;}
 footer .rightWrap p .ftCon{display:inline-block;color: #666;}
 footer .rightWrap .copyright{display:block; color: #999; font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;; margin-top:6px;}
-
-footer .sns{text-align: center;}
-footer .sns ul {overflow: hidden;}
-footer .sns ul li {display: inline-block;}
 
 footer .rightWrap .footBtn{float:right;}
 footer .rightWrap .btnAdress {float:left; display: block; width: 114px;margin-left: 20px; padding: 12px 15px; background: #7b869e; color: #fff; font-size: 14px; font-family: 'RobotoR', 'NotoSansR', 'SimHei', sans-serif;}
@@ -354,109 +384,118 @@ footer .relateSiteBox:after {content:'';display:block;width:18px;height:9px;back
 
 /* screen size 1100px */
 /* header */
-.sc1100 .top .headerMenu {margin:28px 0 0 30px}
-.sc1100 .top .searchForm {margin:17px 30px 0 0}
-.sc1100 .mainVisual .conwrap {top:16%;}
-.sc1100 .mainVisual .conwrap h2 {font-size:55px;line-height:1.2;margin-top:20px}
-.sc1100 .conwrap .roundBox {width:95px;margin-left:-10px;}
-.sc1100 .conwrap .roundBox img{width:100%;}
-.sc1100 .mainVisual .conwrap .monthlyTit{font-size:20px; margin-left:10px;}
-.sc1100 .mainVisual .conwrap .monthlyTit:after{margin:5px 0 0}
-.sc1100 .roundBox .mgDate {top:18px;font-size:36px}
-.sc1100 .roundBox .mgDate span {font-size:14px}
-.sc1100 .mainVisual .conwrap .titInfo {font-size:12px;margin:10px 0 0 5px}
+@media only screen and (max-width: 1100px) {
+.top .headerMenu {margin:28px 0 0 30px}
+.top .searchForm {margin:17px 30px 0 0}
+.mainVisual .conwrap {top:16%;}
+.mainVisual .conwrap h2 {font-size:55px;line-height:1.2;margin-top:20px}
+.conwrap .roundBox {width:95px;margin-left:-10px;}
+.conwrap .roundBox img{width:100%;}
+.mainVisual .conwrap .monthlyTit{font-size:20px; margin-left:10px;}
+.mainVisual .conwrap .monthlyTit:after{margin:5px 0 0}
+.roundBox .mgDate {top:18px;font-size:36px}
+.roundBox .mgDate span {font-size:14px}
+.mainVisual .conwrap .titInfo {font-size:12px;margin:10px 0 0 5px}
 /* view articles list */
-.sc1100 .viewList .viewMenuBox {padding:80px 0 50px}
-.sc1100 .viewMenuBox .articleList li {width:50%}
-.sc1100 .articleList .articleListImg img {width:100%; height:auto;}
+.viewList .viewMenuBox {padding:80px 0 50px}
+.viewMenuBox .articleList li {width:50%}
+.articleList .articleListImg img {width:100%; height:auto;}
 
 /* topicBox */
-.sc1100 .topicBox .topicList li {width:32.5%;margin-right:0.7%;}
-.sc1100 .topicBox .topicList li:first-child {margin-left:0}
-.sc1100 .topicListText .themeType {font-size:15px}
-.sc1100 .topicListText h3 {font-size:20px}
+.topicBox .topicList li {width:32.5%;margin-right:0.7%;}
+.topicBox .topicList li:first-child {margin-left:0}
+.topicListText .themeType {font-size:15px}
+.topicListText h3 {font-size:20px}
 
 /* issue */
-.sc1100 .issueListBox .issueList li .postBox {right:5px;left:5px;top:25%}
-.sc1100 .postBox .themeType {font-size:15px}
-.sc1100 .postBox h3 {font-size:20px;line-height:1.2}
-.sc1100 .issueListBox .issueList li .postBox .snsBox02 {margin-top:15px}
+.issueListBox .issueList li .postBox {right:5px;left:5px;top:25%}
+.postBox .themeType {font-size:15px}
+.postBox h3 {font-size:20px;line-height:1.2}
+.issueListBox .issueList li .postBox .snsBox02 {margin-top:15px}
 
 /* footer */
-.sc1100 footer {padding:35px 16px 25px;height:70px}
-.sc1100 footer .leftWrap {width:100%}
-.sc1100 footer .rightWrap {float:left;margin:10px 0 0 195px}
-.sc1100 footer .rightWrap .copyright {text-align:left}
-.sc1100 footer .rightWrap .footBtn {float:none;position:absolute;top:50%;right:20px;margin-top:-19px}
-.sc1100 footer .relateSiteBox {bottom:92px;right:0;width:708px}
-.sc1100 .relateSiteBox .relateSite > li:first-child {width:24%;padding:0 0 0 1%;}
-.sc1100 .relateSiteBox .relateSite > li {width:17.5%;padding:0 0 0 1%}
+footer {padding:35px 16px 25px;height:70px}
+footer select {
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+}
 
-/* screen size 768px */
-.sc768 .wrapper{padding-top: 48px;}
-.sc768 .dim{position:fixed; top:0; right:0; bottom:0; left:0; background: url('images/dim.png') repeat; z-index:99;}
-.sc768 .dim a{display:block; width:100%; height:100%; }
+}
 
-.sc768 .top{position:relative;top:0;overflow:visible;}
-.sc768.customize-support .top .topBox{top:46px;}
-.sc768 .top .topBox{position:fixed;top: 0; left:0; right:0; height: 48px;overflow:visible; z-index:9;background: #fff;}
-.sc768 .viewOff.top .topBox{background: rgba(255,255,255,0.92);}
-.sc768 .top h1{margin-left: -56px;}
-.sc768 .top h1 a{width:112px;}
-.sc768 .top h1 a img{padding-top:17px;}
-.sc768 .top .headerMenu{margin:0;font-size:0;width:48px;height:48px;}
-.sc768 .top .headerMenu:before{width:100%;height:100%;background: url('images/Wbtn_toggle.png') no-repeat center;}
-.sc768 .top .headerMenu.on:before{background-image:url('images/Wbtn_close.png')}
+@media only screen and (max-width: 768px) {
+.wrapper{padding-top: 48px;}
+.dim{position:fixed; top:0; right:0; bottom:0; left:0; background: url('images/dim.png') repeat; z-index:99;}
+.dim a{display:block; width:100%; height:100%; }
 
-.sc768 .top .MopenSearch{float: right; width:18px; height:18px; padding:15px; background: url('images/Wico_search.png') no-repeat center center;}
-.sc768 .top .MopenSearch.open{background-image: url('images/Wbtn_close.png');}
-.sc768 .top .searchWrap{display:none; position:absolute; top:48px; left:0; right:0; background:#f8f8f8;padding:36px 16px 20px; border-bottom:1px solid #cecece;}
-.sc768 .top .searchWrap .searchForm{width:100%; margin:0; float:none;}
-.sc768 .top .searchForm .searchBox{position:relative; width:auto; padding: 0 80px 0 0; height:40px;}
-.sc768 .top .inputText{width:100%; height:40px; font-size:15px;color:#000;}
-.sc768 .top .searchBtn{position:absolute; right:0; width:52px; background-image: url('images/Wbtn_search.jpg')}
-.sc768 .top .topTag{display:block;}
+.top{position:relative;top:0;overflow:visible;}
+.customize-support .top .topBox{top:46px;}
+.top .topBox{position:fixed;top: 0; left:0; right:0; height: 48px;overflow:visible; z-index:9;background: #fff;}
+.viewOff.top .topBox{background: rgba(255,255,255,0.92);}
+.top h1{margin-left: -56px;}
+.top h1 a{width:112px;}
+.top h1 a img{padding-top:17px;}
+.top .headerMenu{margin:0;font-size:0;width:48px;height:48px;}
+.top .headerMenu:before{width:100%;height:100%;background: url('images/Wbtn_toggle.png') no-repeat center;}
+.top .headerMenu.on:before{background-image:url('images/Wbtn_close.png')}
+.top .MopenSearch{float: right; width:18px; height:18px; padding:15px; background: url('images/Wico_search.png') no-repeat center center;}
+.top .MopenSearch.open{background-image: url('images/Wbtn_close.png');}
+.top .searchWrap{display:none; position:absolute; top:48px; left:0; right:0; background:#f8f8f8;padding:36px 16px 20px; border-bottom:1px solid #cecece;}
+.top .searchWrap .searchForm{width:100%; margin:0; float:none;}
+.top .searchForm .searchBox{position:relative; width:auto; padding: 0 80px 0 0; height:40px;}
+.top .inputText{width:100%; height:40px; font-size:15px;color:#000;}
+.top .searchBtn{position:absolute; right:0; width:52px; background-image: url('images/Wbtn_search.jpg')}
+.top .topTag{display:block;}
 
-.sc768 .topicBox{padding:50px 0 46px;}
-.sc768 .topicBox h2{font-size: 17px;}
-.sc768 .topicBox h2:after{margin:20px auto; width:60px;}
-.sc768 .topicBox .topicList li{width: 100%; margin: 30px 0 0 0;}
-.sc768 .topicList li:first-child{margin-top:0;}
-.sc768 .topicList li a{letter-spacing:-1px;}
-.sc768 .topicBox .topicList li a{letter-spacing:0px;}
-.sc768 .topicBox .topicListText h3{font-size:18px;}
-.sc768 .topicListText h3{font-size:16px;}
-.sc768 .topicListText .themeType{font-size:12px; margin-bottom:0;}
-.sc768 .topicListText .topicTextInfo{font-size:15px;margin:10px 0 0 0; line-height: 18px;}
+.topicBox{padding:50px 0 46px;}
+.topicBox h2{font-size: 17px;}
+.topicBox h2:after{margin:20px auto; width:60px;}
+.topicBox .topicList li{width: 100%; margin: 30px 0 0 0;}
+.topicList li:first-child{margin-top:0;}
+.topicList li a{letter-spacing:-1px;}
+.topicBox .topicList li a{letter-spacing:0px;}
+.topicBox .topicListText h3{font-size:18px;}
+.topicListText h3{font-size:16px;}
+.topicListText .themeType{font-size:12px; margin-bottom:0;}
+.topicListText .topicTextInfo{font-size:15px;margin:10px 0 0 0; line-height: 18px;}
 
-.sc768 .issueBox h2{font-size: 17px;}
-.sc768 .issueBox .issuType{max-width: 280px; margin:0 auto;}
-.sc768 .issueBox .issuTypeBox{height:42px;}
-.sc768 .issueBox .issuType li{width:25%;}
-.sc768 .issueBox .issuType li a{font-size:14px; padding: 13px 0;}
-.sc768 .issueListBox .issueList li .postBox .snsBox02 {margin-top:15px}
+.issueBox h2{font-size: 17px;}
+.issueBox .issuType{max-width: 280px; margin:0 auto;}
+.issueBox .issuTypeBox{height:42px;}
+.issueBox .issuType li{width:25%;}
+.issueBox .issuType li a{font-size:14px; padding: 13px 0;}
+.issueListBox .issueList li .postBox .snsBox02 {margin-top:15px}
 
-.sc768 .postList .topicList li{width:47%; margin:1.5%;}
+.postList .topicList li{width:47%; margin:1.5%;}
 
-.sc768 footer{height:auto;padding: 95px 20px 55px;}
-.sc768 footer > div, .sc768 footer .leftWrap .ftLogo, .sc768 footer .leftWrap address{float: initial; overflow: hidden;}
-.sc768 footer .leftWrap .ftLogo{width:80px; height:15px;}
-.sc768 footer .leftWrap .ftLogo img{width:100%;}
-.sc768 footer .leftWrap address {margin:10px 0 0 0; font-size:10px; line-height: 1em;}
-.sc768 .rightWrap{overflow:visible;position: absolute; top: 35px; left: 0; right:0; padding:0 20px;}
-.sc768 footer .rightWrap .btnAdress.goSite{margin-left:2%;}
-.sc768 footer .rightWrap p .ftCon{color:#9b9c9e;}
-.sc768 footer .rightWrap p a{margin-right:5px;}
+footer{height:auto;padding: 95px 20px 55px;}
+footer > div, .sc768 footer .leftWrap .ftLogo, .sc768 footer .leftWrap address{float: initial; overflow: hidden;}
+footer select { margin-left: 20px;
+    height: 30px;}
+footer .leftWrap .ftLogo{
+    margin-left: 20px; width: 100%;
+    margin-top: -10px;
+    padding-bottom: 5px;
+
+    }
+footer .leftWrap address { margin: 0; padding: 0; margin-left: 20px;
+     font-size:10px; line-height: 1em;}
+.rightWrap{overflow:visible;position: absolute; top: 35px; left: 0; right:0; padding:0 20px;}
+footer .rightWrap .btnAdress.goSite{margin-left:2%;}
+footer .rightWrap p .ftCon{color:#9b9c9e;}
+footer .rightWrap p a{margin-right:5px;}
 .sc768 footer .relateSiteBox{left:16px; bottom:81px; right:16px; width:auto; padding:15px 0; }
 
-.sc768 .relateSiteBox .relateSite{position:relative;}
-.sc768 .relateSiteBox .relateSite:after{content:''; position:absolute; left:15px; right:15px; top:50%; height:1px; background:#dee1e7;}
-.sc768 .relateSiteBox .relateSite > li{width:30%;padding:15px 0 0 2.9%;}
-.sc768 .relateSiteBox .relateSite > li:first-child{width:63.4%;}
-.sc768 .relateSiteBox .relateSite li{font-size:13px;}
-.sc768 .relateSiteBox .relateSite li.relateSite01, .sc768 .relateSiteBox .relateSite li.relateSite02{margin-bottom:7px; }
-.sc768 .relateSiteBox .relateSite li.relateSite03, .sc768 .relateSiteBox .relateSite li.relateSite04, .sc768 .relateSiteBox .relateSite li.relateSite05{margin-top:7px;}
-.sc768 .relateSiteBox .relateSite li.relateSite03{border:0;}
+.relateSiteBox .relateSite{position:relative;}
+.relateSiteBox .relateSite:after{content:''; position:absolute; left:15px; right:15px; top:50%; height:1px; background:#dee1e7;}
+.relateSiteBox .relateSite > li{width:30%;padding:15px 0 0 2.9%;}
+.relateSiteBox .relateSite > li:first-child{width:63.4%;}
+.relateSiteBox .relateSite li{font-size:13px;}
+.relateSiteBox .relateSite li.relateSite01, .sc768 .relateSiteBox .relateSite li.relateSite02{margin-bottom:7px; }
+.relateSiteBox .relateSite li.relateSite03, .sc768 .relateSiteBox .relateSite li.relateSite04, .sc768 .relateSiteBox .relateSite li.relateSite05{margin-top:7px;}
+.relateSiteBox .relateSite li.relateSite03{border:0;}
+    
+}
 
 
 /* ie8 browser */
