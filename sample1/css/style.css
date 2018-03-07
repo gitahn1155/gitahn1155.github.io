@@ -110,9 +110,15 @@ span.outer{display:inline-block;}
 
 /* 72 slider */
 
-.owl-carouselMobile {
- display: none;   
-}
+.owl-carousel.Mobile {
+        display: block;
+    } 
+    .owl-carousel.Mobile .item {
+        display: none;
+        height: 180px;
+        width: 100%;
+        background-color: #FCC927;
+    }
 .slider { 
     position: relative; 
     max-width: 1500px; 
@@ -623,10 +629,10 @@ footer select {
     .dots {
         display: none;
     }
-.owl-carouselMobile {
+.owl-carousel.Mobile {
         display: block;
     } 
-    .owl-carouselMobile .item {
+    .owl-carousel.Mobile .item {
         display: block;
         height: 180px;
         width: 100%;
