@@ -55,6 +55,9 @@ body {background:#f4f5f6;}
 }
 
 /* index */
+.banner {
+margin-top: 10px;
+}
 #maintop { position:relative; z-index:0; }
 	.mainimg { width:100%; display:block;  }
 	.eventimg { width:100%; display:block;  }
@@ -190,14 +193,46 @@ body {background:#f4f5f6;}
 #prevnext {width:100%; float:left; padding:20px 0 20px 0; }
 #prevdiv, #nextdiv { float:left; width:50%; position:relative; background:#000000;}
 #prevdiv1, #nextdiv1 {width:100%; height:220px; opacity:0.6;filter:alpha(opacity=60); -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; background-position: center center; background-repeat: no-repeat; background-size: cover;line-height:110%;}
-#prevdiv2 {position:absolute;top:10%;right:10%; color:white; font-family:"Noto Sans KR",sans-serif;font-size:14px;line-height:110%;}
-#prevdiv3 {position:absolute;top:30%;right:10%; width:80%; text-align:right; color:white; font-family:"Noto Sans KR",sans-serif;font-size:20px; line-height:110%;}
-#prevdiv4 {position:absolute;bottom:5%;right:10%; color:white;font-family:"Noto Sans KR",sans-serif;font-size:14px; background:#000000;padding:10px 10px 10px 10px;line-height:110%;}
+#prevdiv2 {
+    position:absolute;top:10%;right:10%; color:white; 
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size:14px;line-height:110%;}
+#prevdiv3 {
+    position:absolute;top:30%;
+    right:10%; width:80%; 
+    text-align:right; color:white; 
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size:20px; 
+    line-height:110%;}
+#prevdiv4 {
+    position:absolute;
+    bottom:5%;
+    right:10%; 
+    color:white;
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size:14px;
+    background:#000000;
+    padding:10px 10px 10px 10px;
+    line-height:110%;}
 
-#nextdiv2 {position:absolute;top:10%;left:10%; color:white; font-family:"Noto Sans KR",sans-serif;font-size:14px;line-height:110%;}
-#nextdiv3 {position:absolute;top:30%;left:10%; width:80%; color:white; font-family:"Noto Sans KR",sans-serif;font-size:20px;padding-right:5px; line-height:110%;}
-#nextdiv4 {position:absolute;bottom:5%;left:10%; color:white;font-family:"Noto Sans KR",sans-serif;font-size:14px; background:#000000;padding:10px 10px 10px 10px;line-height:110%;}
-#prevnextgap {clear:both;height:20px;}
+#nextdiv2 {
+    position:absolute;top:10%;left:10%; color:white; 
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size:14px;line-height:110%;}
+#nextdiv3 {
+    position:absolute;top:30%;left:10%; width:80%; color:white;
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size:20px;padding-right:5px; line-height:110%;}
+#nextdiv4 {
+    position:absolute;bottom:5%;left:10%; color:white;
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size:14px; 
+    background:#000000;
+    padding:10px 10px 10px 10px;
+    line-height:110%;}
+#prevnextgap {
+    clear:both;height:20px;
+    }
 
 @media all and (max-width:361px) {
 	#prevdiv2,#prevdiv4,#nextdiv2,#nextdiv4 {font-size:8px;}
