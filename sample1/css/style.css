@@ -269,7 +269,6 @@ i {
     position: fixed;
     top: 23px;
     left: 70px;
-    font-family: 'Noto Sans Korean', sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
@@ -370,7 +369,7 @@ i {
     padding:12px 0;
     color:#bbb7b4;
     font-size:17px;
-    font-family: 'Noto Sans Korean', sans-serif; 
+    font-family: 'Noto Sans Korean', sans-serif;
     font-weight: 400;
     cursor:pointer;
     }
