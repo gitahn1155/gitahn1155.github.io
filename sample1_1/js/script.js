@@ -34,4 +34,13 @@ $(document).ready(function(){
 		slider.trigger('to.owl.carousel', [index, 3000]);
 	});
     
+    $('.pNext').on('click', function() {
+		slider.trigger('next.owl.carousel', [1000]);
+	})
+	
+	$('.pPrev').on('click', function() {
+		slider.trigger('prev.owl.carousel', [1000]); 
+	});
+	
+    
 });

@@ -165,6 +165,40 @@ i {
     cursor: pointer;
     }
 
+/* cardSlider */
+.mobileCard {
+    display: none;
+    
+}
+
+
+i {
+    padding: 0;
+    margin: 0;
+    border: solid #fff;
+    width: 60px;
+    height: 60px;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.slider .pArrows .sPrev { 
+    z-index: 100; 
+    position: absolute; 
+    top: 40%; 
+    left: -50px; 
+    border: 2p solid #fff; 
+    cursor: pointer;
+}
+
+.slider .pArrows .sNext { 
+    z-index: 100; 
+    position: absolute; 
+    top: 40%; 
+    right: -50px;
+    cursor: pointer;
+    }
+
 
 .slider .sDots {
     z-index: 100;
@@ -190,6 +224,18 @@ i {
 .active, .sDots .Dot:hover {
     z-index: 100;
     background-color: #FCC927;
+}
+
+.pArrows i {
+    padding: 0;
+    margin: 0;
+    border: solid #005183;
+    width: 30px;
+    height: 30px;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+
 }
 
 .gap {
@@ -585,7 +631,9 @@ footer select {
         height: 180px;
         width: 100%;
         background-color: #FCC927;
-    }    
+    }
+    
+    
  
 i {
 display: none;
@@ -617,8 +665,7 @@ display: none;
     right: 50px;
     cursor: pointer;
     }
-
-
+    
 .slider .sDots {
   display: none;
 }
@@ -637,6 +684,15 @@ display: none;
         display: none;
     }
 
+    .mobileCard {
+    display: block;
+    max-width: 768px;
+    width: 100%;
+    
+}
+    .mobileCard .item img {
+        width: 100%;
+    }
 /* logo */
 .top .menu .bars {
     display: inline-block;
