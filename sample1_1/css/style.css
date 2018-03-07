@@ -474,7 +474,7 @@ i {
     width:100%;
     height:auto
 }
-.topicList li .topicListText {position:relative;padding:35px 20px;background:#fff;}
+.topicList li .topicListText {position:relative;padding:45px 20px;background:#fff;}
 
 /* category */
 .topicListText .themeType {
