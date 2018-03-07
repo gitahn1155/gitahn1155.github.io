@@ -474,7 +474,7 @@ i {
     width:100%;
     height:auto
 }
-.topicList li .topicListText {position:relative;padding:40px 20px;background:#fff;}
+.topicList li .topicListText {position:relative;padding:35px 20px;background:#fff;}
 
 /* category */
 .topicListText .themeType {
@@ -482,6 +482,8 @@ i {
  font-family: 'Noto Sans Korean', sans-serif;
     font-weight: 500;
 }
+
+
 .topicList .topicListText h3{margin-top:10px;}
 .topicList .topicListText h3:hover{text-decoration:underline;}
 /* title */
@@ -496,7 +498,7 @@ i {
 }
 .hoverTxt:hover {text-decoration:underline;}
 .topicListText h3 br{display:none;}
-.topicListText .topicTextInfo {height:2.4em; margin:25px 0 0;font-size:17px;color:#545454;font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;line-height:18px;letter-spacing:-0.5px}
+.topicListText .topicTextInfo {height:3.5em; margin:15px 0 0;font-size:17px;color:#545454; font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;line-height:1.6em;letter-spacing:-1px}
 
 .topicList li .snsBox {display:none;position:absolute;background:#fff;bottom:40px;right:20px;}
 .topicList li .snsBox a {display:inline-block;border:none;float:left;width:30px;margin-left:8px;}
