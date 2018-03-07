@@ -121,7 +121,7 @@ span.outer{display:inline-block;}
     }
 .slider { 
     position: relative; 
-    max-width: 1500px; 
+    max-width: 100%; 
     margin: auto; 
     text-align: center;
     }
