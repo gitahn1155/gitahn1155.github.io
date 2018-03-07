@@ -269,6 +269,7 @@ i {
     position: fixed;
     top: 23px;
     left: 70px;
+    font-family: 'Noto Sans Korean', sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
