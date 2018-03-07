@@ -14,7 +14,7 @@
 body {
     margin:0; 
     padding: 0; 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Korean', sans-serif;
     color:#999;
     word-wrap:break-word;
     word-break: break-all;
@@ -58,7 +58,7 @@ fieldset {
 h1, h2, h3, h4, h5, h6, p, input, textarea, button, select, option {
     margin: 0; 
     padding: 0; 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Korean', sans-serif;
     font-weight: normal;
     line-height: 1;
     
@@ -251,7 +251,7 @@ i {
     display:inline-block;
     float:left;
     font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Korean', sans-serif;
     color:#666565;
 }
 
@@ -369,14 +369,14 @@ i {
     padding:12px 0;
     color:#bbb7b4;
     font-size:17px;
-    font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'Noto Sans Korean', sans-serif;
     font-weight: 400;
     cursor:pointer;
     }
 .issuType li a.on {
     z-index: 100;
     color:#2b2b2b;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Korean', sans-serif;
     font-weight: 400;
     border-bottom:10px solid #2b2b2b;}
 
@@ -436,7 +436,7 @@ i {
 .topicListText h3 {
     font-size:22px;
     color:#333;
-    font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'Noto Sans Korean', sans-serif;
     text-overflow:ellipsis; 
     white-space:nowrap; 
     overflow:hidden;
@@ -689,7 +689,7 @@ display: none;
 .issuType li a.on {
     z-index: 100;
     color:#2b2b2b;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Korean', sans-serif;
     font-weight: 400;
     border-bottom: 4px solid #2b2b2b;}
     
