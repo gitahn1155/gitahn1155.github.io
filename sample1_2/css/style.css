@@ -461,11 +461,11 @@ display: none;
 .topicList li a {display:block;width:100%;}
 .topicList li a .topicListImg {overflow:hidden;background:#000;}
 .topicList li a .topicListImg > img {width:100%;height:auto}
-.topicList li .topicListText {position:relative;padding:40px 20px;background:#fff;}
+.topicList li .topicListText {position:relative;padding: 40px 30px 40px 30px;background:#fff;}
 .topicListText .themeType {font-size:17px;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif;}
 .topicList .topicListText h3{margin-top:10px;}
 .topicList .topicListText h3:hover{text-decoration:underline;}
-.topicListText h3 {font-size:22px;color:#333;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.topicListText h3 {font-size:22px;color:#333;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif; text-overflow:ellipsis; }
 .hoverTxt:hover {text-decoration:underline;}
 .topicListText h3 br{display:none;}
 .topicListText .topicTextInfo {height:2.4em; margin:25px 0 0;font-size:17px;color:#545454;font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;line-height:18px;letter-spacing:-0.5px}
@@ -536,10 +536,13 @@ display: none;
     font-size:22px;
     color:#333;
     font-family: 'Noto Sans Korean', sans-serif;
-    text-overflow:ellipsis; 
-    white-space:nowrap; 
+    text-overflow:ellipsis;
+    /*white-space:nowrap; */
     overflow:hidden;
+    height: 95px;
     font-weight: 500;
+    line-height: 1.2em;
+    padding: 0 20px 0 0;
 }
 .hoverTxt:hover {text-decoration:underline;}
 .topicListText h3 br{display:none;
