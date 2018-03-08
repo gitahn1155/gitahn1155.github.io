@@ -845,9 +845,9 @@ display: none;
 .topicBox h2:after{margin:20px auto; width:60px;}
 .topicBox .topicList li{width: 100%; margin: 30px 0 0 0;}
 .topicList li:first-child{margin-top:0;}
-.topicList li a{letter-spacing:-1px;}
+.topicList li a{letter-spacing:-1px; font-size: 17px;}
 .topicBox .topicList li a{letter-spacing:0px;}
-.topicBox .topicListText h3{font-size:18px;}
+.topicBox .topicListText h3{font-size: 24px;}
 .topicListText h3{font-size:16px;}
 .topicListText .themeType{font-size:12px; margin-bottom:0;}
 .topicListText .topicTextInfo{font-size:15px;margin:10px 0 0 0; line-height: 18px;}
