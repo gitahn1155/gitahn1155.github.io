@@ -126,6 +126,11 @@ body {background:#f4f5f6;}
     padding-top: 20px;
 }
 
+.mainimgsub {
+
+}
+.mainimgsub img {
+}
 
 
 /* footer */
@@ -174,6 +179,60 @@ float: left;
 }
 
 @media only screen and (max-width: 738px) {
+
+    /* header */
+.top {
+    position: absolute;
+    width:100%;
+    z-index:900;
+    margin:10px;
+    }
+
+/* Menu */
+.top .menu {
+    display:inline-block;
+    float:left;
+    font-size: 14px;
+    font-family: 'Noto Sans Korean', sans-serif;
+    color:#666565;
+}
+
+.top .menu .bars {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 600;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 33px;
+    height: 4px;
+    background-color: #3D3D3D;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.top .topMenu {
+    display: none;
+    
+}
+
+.topMenu ul {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    padding: 50px;
+    padding-right: 140px;
+    padding-top: 60px;
+    z-index: 300;
+    background-color: white;
+    -webkit-box-shadow: 0 8px 15px -6px black;
+	   -moz-box-shadow: 0 8px 15px -6px black;
+	        box-shadow: 0 8px 15px -6px black;
+}
 .banner {
 display: none;
 }
@@ -193,6 +252,27 @@ display: none;
     .bannerMobile img {
         width: 100%;
     }
+    
+    div.main1 {
+        display: none;
+    }
+/* footer */
+footer{ height:250px; background: #e8edf0;  position: relative; }
+footer .leftWrap{clear: both; float: left; }
+footer .leftWrap .ftLogo{float:left;}
+    footer .leftWrap .ftLogo img{float:left; text-align: center;}
+footer .leftWrap address{float:left;font-size:8px; font-style: normal; color:#9b9c9e;}
+
+.totalWrap { float: left;margin: 0; padding: 0;height: 5px; background: #a3abbb; width: 100%;}
+footer .rightWrap{float: right;}
+footer .rightWrap p{float:left; margin:20px 0 20px 0;}
+footer .rightWrap p .ftCon{display:inline-block;color: #666;}
+    footer .rightWrap select {
+        max-width: 300px;
+        text-align: left;
+        
+    }
+
     
 }
 
@@ -231,13 +311,14 @@ display: none;
 
 #main {margin:0 auto; max-width:1300px; margin-top:40px; padding-left:7px; }	
 
-. main .main1 {
+.main .main1 {
     position: relative;
     padding: 20px;
 
 }
 
-.main1 ul {
+div.main1 ul {
+    display: block;
     text-align: center;
     list-style: none;
     margin: 70px 0 70px 0;
@@ -290,6 +371,7 @@ display: none;
 		
 	
 #main5 {display:none; margin:0 auto;}
+
 	.main5s {float:left; width:47.2%; margin: 0 1% 0 1%; position:relative;}
 	.main5simg {width:100%;}
 	.main5simg2 {width:100%;position:absolute;top:0px;left:0px;}
