@@ -127,16 +127,6 @@ body {background:#f4f5f6;}
 }
 
 
-/* banner */
-.banner {
-margin-top: 25px;
-margin-bottom: 25px;
-float: left;
-}
-
-.banner img {
-    width: 100%;
-}
 
 /* footer */
 footer{ clear: both; margin-top: 50px; padding: 35px 50px 55px; height:46px; background: #e8edf0;  position: relative; }
@@ -166,6 +156,47 @@ footer .rightWrap .btnAdress.goSite.on:after{width:11px;height:11px;background: 
 
 footer .relateSiteBox { overflow:visible;display:none; position: absolute; bottom:115px;right:50px; width:830px;padding:26px 0 26px 20px; background:#7b869e;}
 footer .relateSiteBox:after {content:'';display:block;width:18px;height:9px;background:url('images/family_site_bg.png') no-repeat 0 0;position:absolute;bottom:-8px;right:64px; z-index:3;}
+
+/* banner */
+.banner {
+display: block;
+margin-top: 25px;
+margin-bottom: 25px;
+float: left;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.bannerMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 738px) {
+.banner {
+display: none;
+}
+
+.banner img {
+    width: 100%;
+} 
+    
+    .bannerMobile {
+        clear: both;
+        float: left;
+        display: block;
+        max-width: 768px;
+        
+        
+    }    
+    .bannerMobile img {
+        width: 100%;
+        margin: 10px;
+    }
+    
+}
+
 @media all and (max-width:800px) {
 	#categorymenu {right:0px;top:80px;}	
 }
