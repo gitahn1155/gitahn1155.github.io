@@ -850,7 +850,7 @@ display: none;
 .topicBox .topicListText h3{font-size: 24px;}
 .topicListText h3{font-size:16px;}
 .topicListText .themeType{font-size:12px; margin-bottom:0;}
-.topicListText .topicTextInfo{font-size:15px;margin:10px 0 0 0; line-height: 18px;}
+.topicListText .topicTextInfo{font-size:15px;margin:10px 0 0 0; line-height: 1.7em;}
 
 .issueBox h2{font-size: 17px;}
 .issueBox .issuType{max-width: 280px; margin:0 auto;}
