@@ -109,7 +109,6 @@ span.outer{display:inline-block;}
 [class*="themetype01"] a{color:#005183;}
 
 /* 72 slider */
-
 .owl-carousel.Mobile {
         display: block;
     } 
@@ -231,6 +230,11 @@ i {
     z-index: 100;
     background-color: #FCC927;
 }
+
+.slider .mDots {
+display: none;
+}
+
 
 .pArrows i {
     padding: 0;
@@ -552,6 +556,11 @@ footer .relateSiteBox:after {content:'';display:block;width:18px;height:9px;back
 /* header */
 @media only screen and (max-width: 1100px) {
     
+.slider .mDots {
+display: none;
+}
+
+    
 .top .topBox {
     height:70px;
     max-width: 1100px;
@@ -619,7 +628,7 @@ footer select {
     z-index:9;
     background: #fff;
 }
-
+    
     .menuWord {
         display: none;
     }
@@ -636,7 +645,7 @@ footer select {
     } 
     .owl-carousel.Mobile .item {
         display: block;
-        height: 180px;
+        height: auto;
         width: 100%;
         background-color: #FCC927;
     }
@@ -686,8 +695,64 @@ display: none;
     z-index: 100;
     background-color: #FCC927;
 }
-    
 
+
+.slider .sDots {
+    z-index: 100;
+    position: relative;
+    max-width:650px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -12px;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #f8f8f8;
+     border-radius: 10px;
+}
+
+.sDots .sDot {
+    display: inline-block;
+    max-width: 200px;
+    border-radius: 6px;
+    height: 5px;
+    width: 100%;
+   /* border: 1px solid #034C70; */
+}
+
+.active, .sDots .Dot:hover {
+    z-index: 100;
+    background-color: #FCC927;
+}
+    
+    
+    
+.slider .mDots {
+    display: block;
+    z-index: 100;
+    position: relative;
+    max-width:350px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -12px;
+    padding-bottom: 3px;
+ 
+}
+
+.mDots .mDot {
+    display: inline-block;
+    max-width: 50px;
+    border-radius: 6px;
+    height: 6px;
+    width: 100%;
+     border: 1px solid #f5f5f5;
+   /* border: 1px solid #034C70; */
+}
+
+.active, .mDot .mDot:hover {
+    z-index: 100;
+    background-color: #FCC927;
+}
+
+    
     .banner-container {
         display: none;
     }
@@ -766,7 +831,7 @@ display: none;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Roboto', Sans-Serif;
-    margin-top: 25px;
+    margin-top: 15px;
     padding-bottom: 20px;
     word-spacing: 3px;
     color:#005183;

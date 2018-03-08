@@ -21,6 +21,7 @@ $(document).ready(function(){
     
     //콜백
     var slider = $('.owl-carousel');
+    var mSlider = $('.owl-carousel.Mobile');
 	$('.sNext').on('click', function() {
 		slider.trigger('next.owl.carousel', [1000]);
 	})
@@ -32,6 +33,11 @@ $(document).ready(function(){
     $('.sDot').on('click', function() { //specific number click to open the number slider
 		var index = $(this).index();
 		slider.trigger('to.owl.carousel', [index, 3000]);
+	});
+    
+    $('.mDot').on('click', function() { //specific number click to open the number slider
+		var index = $(this).index();
+		mSlider.trigger('to.owl.carousel', [index, 3000]);
 	});
     
 });
