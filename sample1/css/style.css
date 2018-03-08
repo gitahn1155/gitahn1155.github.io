@@ -278,6 +278,12 @@ display: none;
 .top.viewOff .topBox{
     background:rgba(255,255,255,0.92) !important;background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#eaffffff,endColorstr=#eaffffff);zoom: 1;}
 
+.top .rightVol {
+    display: block;
+    float: right;
+    padding: 24px;
+}
+
 /* logo */
 .top h1 { 
     position:absolute;
@@ -613,6 +619,11 @@ footer select {
 }
 
 @media only screen and (max-width: 768px) {
+    .top .rightVol {
+    display: none;;
+    float: right;
+    padding: 24px;
+}
 .wrapper{padding-top: 0px;}
 .dim{position:fixed; top:0; right:0; bottom:0; left:0; background: url('images/dim.png') repeat; z-index:99;}
 .dim a{display:block; width:100%; height:100%; }
