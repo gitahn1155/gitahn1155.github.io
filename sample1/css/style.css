@@ -415,7 +415,7 @@ display: none;
     width:100%;
     overflow:hidden;
     border-bottom:1px solid #cecece;
-    height:65px;
+    height:71px;
     }
 .tab .issuType {
     max-width:480px; 
@@ -428,7 +428,7 @@ display: none;
 .tab .issuType li a {
     display:inline-block;
     width:100%;
-    padding:18px 0;
+    padding:22px 0;
     color:#bbb7b4;
     font-size:17px;
     font-family: 'Noto Sans Korean', sans-serif;
