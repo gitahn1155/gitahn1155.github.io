@@ -556,7 +556,7 @@ display: none;
 /* End topicBox */
 
 /* footer */
-footer{ padding: 35px 50px 25px; height:46px; background: #b3b3b3;  position: relative; }
+footer{ padding: 35px 50px 25px; height:46px; background: #d6d6d6;  position: relative; }
 footer .leftWrap{float: left;}
 footer .leftWrap .ftLogo{float:left;}
 footer .leftWrap address{float:left; font-size:12px; font-style: normal; color:#9b9c9e; margin-left: 20px; margin-top: 20px; font-family: 'RobotoL', 'NotoSansL', 'SimHei', sans-serif;}
