@@ -32,8 +32,6 @@
 
     </head>
     
-    
-    
 	<body>
 		<!-- wrapper -->
 		<div class="wrapper" id="top">
@@ -51,34 +49,47 @@
                         기사 목록 보기
                     </div>
                     </a>
-                    <div class="topMenu">
-                        <ul>
-                            <li>캠코 알리미</li>
-                                <div class="subList">캠코 이슈</div>
-                                <div class="subList">희망 리플레이</div>
-                                <div class="subList">언론에 비친 캠코</div>
-                                <div class="subList">캠코 공모전</div>
-                            <li>캠코 돋보기</li>
-                                <div class="subList">캠코 구석구석</div>
-                                <div class="subList">캠코 탐구생활</div>
-                                <div class="subList">캠코 소통노트</div>
-                                <div class="subList">Clean 캠코</div>
-                            <li>캠코 문화원정대</li>
-                                <div class="subList">트렌드 리포트</div>
-                                <div class="subList">캠코 미식회</div>
-                                <div class="subList">영화 속 경제학</div>
-                                <div class="subList">EVENT</div>
-                        
-                        </ul>
-                    </div>
                     <!-- kamco logo -->
 					<h1><a href="https://gitahn1155.github.io/sample1" class="headerLogo"><img src="img/KAMCO_spring_s.gif" alt="kamcologo" /></a></h1>      
                     
                     <div class="rightVol">
                     <p>2018 Spring Vol. 15</p>
                     </div>
-				</div>				
+				</div>
+             <!--- sub menu --->
+                
             </header>
+            <div class = "container" style="display:none">
+        <div class = "containerMenu">
+            <div class="conMenu">
+            <ul class="conCategory">
+                <a href="" style="color: #005183 font-weight: 400">캠코 알림터</a>
+                    <li>캠코家중계</li>
+                    <li>희망Reply</li>
+                    <li>캠코 뉴스와이드</li>
+                    <li>캠코 스토리</li>
+            </ul>
+            <ul class="conCategory">
+                <a href="" style="color:#da1b1b;">캠코 살림터</a>
+                    <li>캠코여지도</li>
+                    <li>캠코人</li>
+                    <li>캠코 소통백서</li>
+                    <li>정정당당 캠코</li>
+            </ul>
+            <ul class="conCategory">
+                <a href="" style="color:#f5a000">캠코 놀이터</a>
+                    <li>정보꿀단지</li>
+                    <li>영화에 경제 한 스푼</li>
+                    <li>캠코 미식회</li>  
+            </ul>
+            <ul class="conCategory">
+                <a href="" style="color: green">EVENT</a>
+                    <li>Spring Event</li>
+                    <li>설문 참여</li>  
+            </ul>
+            </div>
+        </div>
+    </div>
             <!-- header End -->
             
         
@@ -127,9 +138,10 @@
                 </div>     
             </div>
 	       </section> 
+        
+            
         <!-- End section tab -->    
-		<!-- section content -->
-	   
+		<!-- section content -->   
         <section class="topicBox">
 		<div class="wrap">
 			<ul class="topicList">
@@ -376,11 +388,49 @@
             </li>
         </ul>
 		</div>
-            
-
 	</section>
 
-		
+<script type="text/javascript">
+                // 객체지향 방식
+// Prototype
+function Selector() { //선택자 집합 클라스 - 선언문
+    var doc = document;
+    this.select = doc.querySelector('.container');
+}
+
+function menuPop(displayType) { //align 기능 - 기능문
+    this.displayType = displayType; //초기값으로 setting
+}
+
+menuPop.prototype = new Selector;
+menuPop.prototype.constructor = menuPop; //상속하다.
+menuPop.prototype.horizontal = function () {
+    var concc = this.select.style.display;
+    if(concc == 'block') {
+        
+        this.select.style.display = 'none';
+    }
+    
+    else {
+        this.select.style.display = 'block';
+    }
+	}
+
+
+    
+var mdValue = "block";
+var menuTop = new menuPop(mdValue);
+var doc = document;
+
+
+//Event
+doc.querySelector('.menu').addEventListener('click', function() {
+    menuTop.horizontal();
+});
+
+
+                
+                </script>	
 <!-- tab line action -->
     <script type="text/javascript">
 		jQuery(document).ready(function($) {

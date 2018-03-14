@@ -70,7 +70,7 @@ function shareUrl(service, url, text) {
 	var sharerUrl = '';
 	var wHeight = 0;
 
-	var twitterText = text +' #Mom대로 키워라';
+	var twitterText = text +' #미정';
 	switch (service) {
 		case "fb":
 		//ga('send', 'event', '페이스북 공유', 'listclick', text);
@@ -97,7 +97,7 @@ function shareUrl(service, url, text, postId) {
 	var sharerUrl = '';
 	var wHeight = 0;
 
-	var twitterText = text +' #Mom대로 키워라';
+	var twitterText = text +' #미정';
 
 	var actionMethod = '';
 	switch (service) {
@@ -109,7 +109,7 @@ function shareUrl(service, url, text, postId) {
 		break; 
 		case "tw":
 		// ga('send', 'event', '트위터 공유', 'listclick', text);
-		sharerUrl = '//twitter.com/share?text='+encodeURIComponent(twitterText)+'&url=http://www.momkey.com/';
+		sharerUrl = '//twitter.com/share?text='+encodeURIComponent(twitterText)+'&url=http://webzine.kamco.or.kr';
 		wHeight = 520;
 		actionMethod = 'post_twitter_sharing_count';		
 		break;
