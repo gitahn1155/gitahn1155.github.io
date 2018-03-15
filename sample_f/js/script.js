@@ -1,20 +1,3 @@
-//header logo
-
-//header menu
-
-//변수
-var menu = $('.menu');
-var contMenu = $('.containerMenu');
-
-//이벤트
-menu.on('click', menuFunc);
-
-//함수
-function menuFunc() {
-    contMenu.hide(); 
-}
-
-
 //initial 함수
 $(document).ready(function(){
     //owlCarousel slider
