@@ -1,0 +1,39 @@
+var header = //customize
+{
+        menu:1, //customize: set left as menu section 
+        {Pagelist:4, 
+            {category1: 4, [li, li, li, li]},
+            {category2: 4, [li, li, li, li]},
+            {category3: 3, [li, li, li]},
+            {li: 1, [event]}
+        }
+
+        
+        logo:1, //customize: set middle as logo section
+        {img : src}
+    
+        vol: 1, //customize: set right as volume section
+        {text : 2018 Spring Vol. 15 }
+    }
+}
+var kamcoPage = //html input
+{
+    slider:3, //carousel plugin > add slider to single page
+    {
+        sliderList: 3, [img src, text]     
+    }
+
+    post: 12, //add post to page > 
+        {[img, category, title, text]}
+
+    footer: custom made
+}
+
+
+
+var postPage = //layout edit
+    {
+        ux builder element
+        
+    }
+    

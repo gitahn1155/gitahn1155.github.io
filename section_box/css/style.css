@@ -1,0 +1,173 @@
+/*
+    1. Basic Style - Line 14     
+    2. Slider Style - Line 72
+    3. Common?
+    4. PC Style
+    5. Tablet Style
+    6. Mobile Style
+*/
+
+/* 14 Basic Style */
+body {
+    margin:0; 
+    padding: 0; 
+    font-family: 'Noto Sans Korean', sans-serif;
+    color:#999;
+    word-wrap:break-word;
+    word-break: break-all;
+    
+        /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    }
+
+a, a:link, a:visited, a:hover, a:active, a:focus  {
+    text-decoration:none;
+    }
+
+img {
+    border:0;
+    vertical-align: text-top;
+    }
+
+ul, ol, li {
+    list-style:none; 
+    padding:0; 
+    margin:0;
+    }
+
+
+fieldset {
+    border:0; 
+    padding:0; 
+    margin: 0;
+    }
+
+h1, h2, h3, h4, h5, h6, p, input, textarea, button, select, option {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    
+    /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    }
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+
+.wrapper {
+    position: relative; 
+    margin: 0; 
+    padding: 0;
+    top: 70px;
+    }
+
+.wrap {
+    max-width:1500px;
+    margin:0 auto;
+    padding:0 16px;
+    }
+.clearBox {content:'';clear:both;display:block;overflow:hidden;}
+/* End basic style */
+
+/* common */
+.topicCorner {background: #ebebeb;border: 1px solid #ebebeb;}
+.topicCorner {overflow: hidden;}
+span.outer{display:inline-block;}
+.hidden{overflow:hidden;position:absolute;width:0;height:0;margin:0!important;padding:0 !important;}
+.themeType {display:inline-block;font-size:14px;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif;color:#909898;}
+.themeType a{line-height:1.2em;color:#909898;}
+.themeType:hover{text-decoration:underline;}
+[class*="themetype01"]{color:#005183;}
+[class*="themetype01"] a{color:#005183;}
+
+/* topicBox */
+.topicBox {
+    background:#f8f8f8;
+    padding: 40px 0 90px;
+}
+
+.topicBox .topicList li{
+    width:23%;
+    margin-left:1.3%;
+    margin-bottom:20px;
+}
+
+.topicList {width:100%;overflow:hidden;}
+.topicList li {float:left;position:relative;}
+.topicList li .outer{background:#eee;}
+.topicList li a {display:block;width:100%;}
+.topicList li a .topicListImg {overflow:hidden;background:#000;}
+.topicList li a .topicListImg > img {width:100%;height:auto}
+.topicList li .topicListText {position:relative;padding:40px 20px;background:#fff;}
+.topicListText .themeType {
+    font-size:17px;
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-weight: 500;
+}
+.topicListText h3 {
+    margin-top:17px; 
+    font-size:22px;
+    color:#333;
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-weight: 500;
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;}
+.topicList .topicListText h3:hover{text-decoration:underline;}
+.topicListText h3 br{display:none;}
+.topicListText .topicTextInfo {height:3.5em; margin:15px 0 0;font-size:17px;color:#545454;  font-family: 'Noto Sans Korean', sans-serif; font-weight: 300; line-height:1.6em;letter-spacing:-1px}
+
+.topicList li .snsBox {display:none;position:absolute;background:#fff;bottom:40px;right:20px;}
+.topicList li .snsBox a {display:inline-block;border:none;float:left;width:30px;margin-left:8px;}
+.topicList li .snsBox a:first-child {margin-left:0px;}
+.topicList li .snsBox a img{width:100%;}
+
+/* End topicBox */
+/* screen size 1100px */
+@media only screen and (max-width:1100px){
+.topicBox .topicList li{
+    width:30%;
+    margin-left:1.3%;
+    margin-bottom:20px;
+}
+}
+
+/* screen size 768px */
+@media only screen and (max-width:768px){
+ .topicBox .topicList li{
+    width:99%;
+    margin-left:0%;
+    margin-bottom:20px;
+}
+}
+
+/* ie8 browser */
+.browser{display:none;}
+@media \0screen\,screen\9 {
+	.browser{display:block;position:absolute;top:0;left:0;right:0;padding:0 40px 0 10px;background:#009d9c;color:#fff;line-height:30px;text-align:center;word-break: keep-all;}
+	.browser a{float:right;display:block;width:40px;height:30px;margin-right:-40px;background:url('images/btn_closeW.png') no-repeat center;}
+}
