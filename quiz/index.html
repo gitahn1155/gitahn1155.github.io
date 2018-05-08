@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!-- saved from url=(0013)about:internet-->
+    <head>
+ <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <title></title>
+<style type="text/css">
+
+/* Quiz Box */
+
+	
+#quiz-container{
+  position: relative;
+}
+
+
+.slideQ{
+position: absolute;
+width: 100%;
+z-index: 1;
+opacity: 0;
+transition: opacity 0.5s;
+}
+.active-slideQ{
+  opacity: 1;
+  z-index: 100;
+}
+.question{    
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 10px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+font-size: 20px;
+  margin-bottom: 10px;
+}
+.buttonQuiz {
+  font-family: 'Work Sans', sans-serif;
+	font-size: 22px;
+    background-color: #263147;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.buttonQuiz:hover{
+	background-color: #ff9c00;
+}
+
+.buttonBox {
+margin: 0 auto;
+text-align: center;
+    padding-top: 60%;
+
+}
+.resultBox { 
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding-top: 20px;
+	padding-bottom: 20px;
+    background-color: #263147;
+    text-align:center;
+    border: 1px solid black;
+}
+
+   .quizb2 {
+        display: none;
+    }
+</style>
+   </head>
+   
+<body>
+
+  <div id="quiz-container">
+    <div id="quiz"></div>
+</div>
+
+<div class="buttonBox" id="buttonBox" style="text-align: center;">
+<button class="buttonQuiz" id="previous">뒤로가기</button>
+<button class="buttonQuiz" id="next">다음 질문 </button>
+<button class="buttonQuiz" id="submit">결과 보기</button>
+</div>
+
+<div id="results"></div>
+	
+<script type="text/javascript" src="quizModule.js"></script>
+    </body>
+</html>
