@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+	<style>
+        #wrapper {
+            background-color: #dad6cb;
+            padding-bottom: 30px;
+        }
+        #pageNum {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        #banner1 {
+            display:none;
+        }
+        
+        #banner2 {
+            display: block;
+        }
+.quizContainerv {
+    display: block;
+			position: relative;
+			max-width: 800px;
+			padding: 30px;
+		}
+.box1 {
+			float: left;;
+			padding-top: 0px;
+			margin-right: 10px;
+    max-width: 350px;
+font-weight: bold;
+			font-size: 16px;
+			color: #403628;
+		}
+.box2 {
+			float: right;
+			margin: 0;
+			
+		}
+.boxAll {
+			margin: 10px;
+			padding: 20px;
+			padding-bottom: 40px;
+        }
+select {
+    	width: 130px;
+    	height: 30px;
+		padding-right: 10px;
+       font-size: 17px;
+    	color: gray;
+    	border: 2px solid #dcdcdc;
+    	appearance: none;
+		}
+		.buttonBoxvs {
+		    display: block;
+margin: 0 auto;
+text-align: center;
+margin-top: 570px;
+margin-bottom: 100px;
+		}
+		
+		.buttonBoxvs .active{
+			margin: 0;
+
+		}
+		
+		.button {
+			float: none;
+			width: 40%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+			padding: 3%;
+			padding: 5%;
+		
+		}
+        
+     #resultsvs {
+            margin: 0 auto;
+			margin-top: -80px !important;
+        }
+		
+.slideQvs{
+position: absolute;
+width: 100%;
+z-index: 1;
+opacity: 0;
+/* transition: opacity 0.5s; */
+}
+.active-slideQvs{
+  opacity: 1;
+  z-index: 100;
+}
+@media only screen and (max-width:400px){
+            #banner1 {
+            display:block;
+        }
+    #banner2 {
+        display: none;
+    }
+.quizContainerv {
+    display: block;
+			position: relative;
+			max-width: 800px;
+			padding: 5px;
+		}
+    
+.box1 {
+			float: left;
+			padding-top: 10px;
+			margin-right: 10px;
+            font-weight: 100;
+			font-size: 16px;
+			color: #403628;
+		}
+.box2 {
+			float: right;
+			margin: 0;
+    padding-bottom: 10px;
+     border-bottom: 2px solid #f0f0f0;
+			
+		}
+.boxAll {
+			margin: 10px;
+			padding: 20px;
+			padding-bottom: 40px;}
+select {
+    	width: 250px;
+    	height: 30px;
+		padding-right: 10px;
+       font-size: 17px;
+    	color: gray;
+    	border: 2px solid #dcdcdc;
+    	appearance: none;
+		}
+		.buttonBoxvs {
+		    display: block;
+margin: 0 auto;
+text-align: center;
+margin-top: 740px;
+margin-bottom: 100px;
+		}
+.button {
+			float: none;
+			width: 40%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+			padding: 3%;
+			padding: 5%;
+		
+		}
+	</style>
+	
+<div id="wrapper">	
+    <div id="banner2">
+    <img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/06/16honey06.jpg" width="100%" />
+    </div>
+      <div id ="banner1"><img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/06/16honey6-1.jpg" width="100%"/></div>
+		<div class="quizContainerv">
+			<div id="quizvs"></div>
+		</div>
+		<div class="clear: both"></div>
+		  <div id="resultsvs"></div>
+<div id="btContainvs">
+<div class="buttonBoxvs" id="buttonBoxvs" style="text-align: center;">
+		<button class="button" id="previousvs" >뒤로가기</button>
+		<button class="button" id="nextvs">다음 질문 </button>
+		<button class="button" id="submitvs">결과 보기</button>
+        </div>
+</div>
+</div>	
+<script type="text/javascript">	
+			
+	var myQuestions = [
+	{page: "page1",
+	 questions: {
+	  1: "① 다른 사람에게 의지하는 것이 어렵다고 생각한다.",
+	  2: "② 내가 필요로 할 때 사람들은 결코 있어주지 않는다.",
+	  3: "③ 나는 다른 사람에게 의지하는 것이 편안하다.",
+	  4: "④ 내가 필요로 할 때 다른 사람들이 같이 있어줄 것이다. ",
+	  5: "⑤ 나는 타인을 완전히 신뢰할 수 없다고 생각한다.",
+	  6: "⑥ 필요로 할 때 누군가 곁에 있어도 나는 그 사람에게 항상 의지할 수 있다고 생각하지 않는다."
+	 },
+	 answers: {
+      0: '선택하기', //answer number
+      1: '1 전혀 그렇지 않다', 
+      2: '2 때때로 그렇다', 
+      3: '3 보통이다', 
+      4: '4 자주 그렇다',
+	  5: '5 항상 그렇다'
+    }},
+	{page: "page2",
+	 questions: {
+	  1: "⑦ 버림을 받는다는 것에 대해서 걱정하지 않는다.",
+	  2: "⑧ 내 파트너가 나를 정말로 사랑하지 않을지도 모른다는 것에 대해서 종종 걱정한다.",
+	  3: "⑨ 다른 사람들은 내가 원하는 만큼만 마지못해 가까워진다고 생각한다.",
+	  4: "⑩ 내 파트너가 나와 함께 있는 것을 원하지 않을지도 모른다는 것에 대하여 걱정한다.",
+	  5: "⑪ 나는 어떤 다른 사람과 모든 것이 완전히 일치되기를 원한다.",
+	  6: "⑫ 무엇이든지 일치되기를 원하는 나의 욕망은 때때로 사람들을 겁주어 쫓아버린다."
+	 },
+	 answers: {
+      0: '선택하기', //answer number
+      1: '1 전혀 그렇지 않다', 
+      2: '2 때때로 그렇다', 
+      3: '3 보통이다', 
+      4: '4 자주 그렇다',
+	  5: '5 항상 그렇다'
+    }}, 
+	{page: "page3",
+	questions: {
+	  1: "⑬ 다른 사람과 가까워지는 것이 비교적 쉽다.",
+	  2: "⑭ 어떤 사람과 너무 가까워진다는 것에 대하여 걱정하지 않는다.",
+	  3: "⑮ 다른 사람과 친한 것이 다소 불편하다.",
+	  4: "⑯ 어떤 사람과 너무 친해지면 나는 신경질적이 된다. ",
+	  5: "⑰ 나는 타인을 완전히 신뢰할 수 없다고 생각한다.",
+	  6: "⑱ 필요로 할 때 누군가 곁에 있어도 나는 그 사람에게 항상 의지할 수 있다고 생각하지 않는다."
+	 },
+	 answers: {
+      0: '선택하기', //answer number
+      1: '1 전혀 그렇지 않다', 
+      2: '2 때때로 그렇다', 
+      3: '3 보통이다', 
+      4: '4 자주 그렇다',
+	  5: '5 항상 그렇다'
+    }}
+	];			
+	
+  function buildQuizvs() {
+    // we'll need a place to store the HTML output
+	var outputDiv = [];
+	var quizContainerv = document.getElementById("quizvs");
+    // for each question...
+	 myQuestions.forEach(function (currentQuestion, questionNumber) {
+		 var output = [];
+		var j;
+		var i = questionNumber;
+		for (j=1; j <7; j++) {
+		var questions = [];
+		var answers = [];
+		questions.push('<div class="box1">' + myQuestions[i]['questions'][j] + '</div>'); //Page 1, Question 1,2,3,4,5,6
+		var c = j;	
+		for (c=0; c <6; c++){
+			answers.push('<option name="question" value="' + c + '">' + myQuestions[i]['answers'][c] + '</option>'); //Question 1, Answer 1,2,3,4,5,6
+		}	
+			output.push('<div class="boxAll">' + questions.join("") + '<div class="box2"><select class="mySelect">' + answers.join("") + "</select></div></div>");
+		}
+		 
+		if(i == 0) {
+		outputDiv[0] = '<div class="slideQvs"><div id="pageNum"> 1 / 3 페이지</div>' + output.join("") + '</div>';
+			}
+		if(i == 1) {
+		outputDiv[1] = '<div class="slideQvs"><div id="pageNum"> 2 / 3 페이지</div>' + output.join("") + '</div>';
+			}
+		if(i == 2) {
+		outputDiv[2] = '<div class="slideQvs"><div id="pageNum"> 3 / 3 페이지</div>' + output.join("") + '</div>';
+			}
+	});	 
+		
+		quizContainerv.innerHTML = outputDiv.join("");
+		//quizContainer.innerHTML = output.join("");
+	  
+  }
+	
+ function showResultsvs() {
+    // gather answer containers from our quiz
+    var answerContainers = quizContainerv.querySelectorAll(".mySelect"); //div container
+var resultsContainer = document.getElementById("resultsvs");
+	 var buttonContainer = document.getElementById('btContainvs');
+ 
+	//for each result
+    var j = 0;
+   var numAddition = 0;
+var numA = 0; 
+var numB = 0; 
+var numC = 0;
+var numResult = 0;
+     
+	 for (j=0; j < 18; j++) {
+		var userAnswer = answerContainers[j].selectedIndex;
+        
+        var typeA = [0, 4, 5, 14, 15, 17];
+        var typeB = [1, 7, 8, 9, 10, 11];
+        var typeC = [2, 3, 6, 12, 13, 16];
+        var personalType;
+    console.log(j);
+//Calculation
+        if([0, 4, 5, 14, 15, 17].indexOf(j) !== -1) {
+            console.log("A" + j);
+            numA = numA + parseInt(userAnswer);
+            
+        }
+         
+        if([1, 7, 8, 9, 10, 11].indexOf(j) !== -1){
+            console.log("B" + j);
+            numB = numB + parseInt(userAnswer);
+        }
+         
+        if([2, 3, 6, 12, 13, 16].indexOf(j) !== -1){
+            console.log("C" + j);
+            numC = numC + parseInt(userAnswer);
+        }
+	}
+     if(numA > numB && numA > numC) {
+        personalType = '<img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/07/16test02.jpg" width="100%">';
+		numResult = numA;
+     }
+     
+     else if(numB > numA && numB > numC) {
+         personalType = '<img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/07/16test03.jpg" width="100%">';
+		 numResult = numB;
+     }
+     
+     else if(numC > numA && numC > numB) {
+         personalType = '<img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/07/16test04.jpg" width="100%">';
+		 numResult = numC;
+     }
+     
+     else if(numA > 20 && numB > 20) {
+         perosonalType = '<img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/07/16test05.jpg" width="100%">';
+		 numResult = numA;
+     }
+     
+     else {
+      personalType = "없습니다";
+     }
+//AnswerResult
+   var answerNumber = 0;
+   
+   answerNumber = numAddition;
+   quizContainerv.innerHTML = "";
+	buttonContainer.innerHTML = "";
+   resultsContainer.innerHTML =  '<div class="resultBoxvs" style="background-color: #dad6cb; position: relative"><div><img src="http://webzine.kamco.or.kr/wp-content/uploads/2018/07/16test01.jpg" width="100%" /><p style="text-align: center !important;"><span style="color: #000; font-weight: bold; font-size: 20px;">나의 점수는</span><br /><span style="color: #23466e; font-size: 60px; font-weight: bold;">' + numResult + '</span></p></div>' + personalType;
+  }
+//Slider 0, 1, 2
+ function showSlide(n) {
+    var activeSlide = "active-slideQvs";
+    if (slides[currentSlide].classList) {
+      slides[currentSlide].classList.remove("active-slideQvs");
+    } else {
+      slides[currentSlide].className.className = "slideQvs";
+    }
+    if (slides[n].classList) {
+      slides[n].classList.add("active-slideQvs");
+    } else {
+   		slides[n].className += " " + activeSlide;
+    }
+	 
+    currentSlide = n;
+    if (currentSlide == 0) {
+      previousButton.style.display = "none";
+    } else {
+      previousButton.style.display = "inline-block";
+    }
+    if (currentSlide == slides.length - 1) {
+      nextButton.style.display = "none";
+      submitButton.style.display = "inline-block";
+    } else {
+      nextButton.style.display = "inline-block";
+      submitButton.style.display = "none";
+    }
+     
+  var elmnt = document.getElementById("pageNum");
+    elmnt.scrollIntoView();  
+  }
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+  var quizContainerv = document.getElementById("quizvs");
+  var submitButton = document.getElementById("submitvs");
+  var resultsContainer = document.getElementById("resultsvs");
+  // display quiz right away
+  buildQuizvs();
+  var previousButton = document.getElementById("previousvs");
+  var nextButton = document.getElementById("nextvs");
+  var slides = document.querySelectorAll(".slideQvs");
+  var currentSlide = 0;
+  showSlide(0);
+  // on submit, show results
+  submitButton.addEventListener("click", showResultsvs);
+  previousButton.addEventListener("click", showPreviousSlide);
+  nextButton.addEventListener("click", showNextSlide);
+</script>
+
+
+</body>
+</html>
