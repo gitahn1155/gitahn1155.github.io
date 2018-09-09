@@ -1,0 +1,206 @@
+/*
+TESTING
+1. Basic Style
+2. Header
+    - Basic
+    - Menu,logo,volume
+    - Dropdown Menu
+
+3. Section
+    - Slider
+    - Tab
+    - Box
+3. Footer
+
+*/
+
+/* Basic Style */
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Noto Sans Korean', sans-serif;
+    color:#999;
+    word-wrap:break-word;
+    word-break: break-all;
+
+        /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    }
+
+a, a:link, a:visited, a:hover, a:active, a:focus  {
+    text-decoration:none;
+    }
+
+img {
+    border:0;
+    vertical-align: text-top;
+    }
+
+ul, ol, li {
+    list-style:none;
+    padding:0;
+    margin:0;
+    }
+
+
+fieldset {
+    border:0;
+    padding:0;
+    margin: 0;
+    }
+
+h1, h2, h3, h4, h5, h6, p, input, textarea, button, select, option {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-weight: normal;
+    line-height: 1;
+
+    /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    }
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+
+.wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 70px;
+    }
+
+.wrap {
+    max-width:1500px;
+    margin:0 auto;
+    padding:0 16px;
+    }
+.clearBox {content:'';clear:both;display:block;overflow:hidden;}
+/* End basic style */
+
+/* section - tab & box */
+.topicCorner {background: #ebebeb;border: 1px solid #ebebeb;}
+.topicCorner {overflow: hidden;}
+span.outer{display:inline-block;}
+.hidden{overflow:hidden;position:absolute;width:0;height:0;margin:0!important;padding:0 !important;}
+.themeType {display:inline-block;font-size:14px;font-family: 'RobotoM', 'NotoSansM', 'SimHei', sans-serif;color:#909898;}
+.themeType a{line-height:1.2em;color:#909898;}
+.themeType:hover{text-decoration:underline;}
+[class*="themetype01"]{color:#005183;}
+[class*="themetype01"] a{color:#005183;}
+
+/* Header Setting */
+/* Basic */
+.top {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    z-index:900;
+    }
+
+.top .topBox {
+    height:70px;
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index:9;
+    background: #fff;
+}
+
+
+/* Menu */
+.top .menu {
+    display:inline-block;
+    float:left;
+    font-size: 14px;
+    font-family: 'Noto Sans Korean', sans-serif;
+    color:#666565;
+}
+
+.top .menu .bars {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 18px;
+    left: 22px;
+    z-index: 600;
+
+}
+
+.top .menu .menuWord {
+    position: fixed;
+    display: block;
+    top: 23px;
+    left: 70px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #3D3D3D;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.top .topMenu {
+    display: none;
+
+}
+
+/* logo */
+.top h1 {
+    position:absolute;
+    top:0px;
+    left:50%;
+    bottom:0;
+    margin-left:-100px;
+}
+
+.top h1 a, .top h1 a img {
+    display:block;
+}
+
+.top h1 a {
+    width:200px;
+    height:100%;
+}
+
+.top h1 a img {
+    width:100%;
+    padding-top:20px;
+}
+
+/* Volume */
+.top .rightVol {
+    display: block;
+    float: right;
+    padding: 24px;
+}
